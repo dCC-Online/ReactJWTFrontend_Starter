@@ -8,8 +8,8 @@ const LoginPage = () => {
   const { loginUser, isServerError } = useContext(AuthContext);
   const defaultValues = { userName: "", password: "" };
   const [formData, handleInputChange, handleSubmit, reset] = useCustomForm(
-    defaultValues,
-    loginUser
+    loginUser,
+    defaultValues
   );
 
   useEffect(() => {

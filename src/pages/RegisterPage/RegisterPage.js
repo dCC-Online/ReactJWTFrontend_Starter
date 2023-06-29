@@ -12,8 +12,8 @@ const RegisterPage = () => {
     lastName: "",
   };
   const [formData, handleInputChange, handleSubmit] = useCustomForm(
-    defaultValues,
-    registerUser
+    registerUser,
+    defaultValues
   );
 
   return (

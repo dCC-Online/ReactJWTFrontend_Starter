@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useCustomForm = (initialValues = {}, onSubmit) => {
+const useCustomForm = (onSubmit, initialValues = {}) => {
   const [formData, setFormValues] = useState(initialValues);
 
   const handleInputChange = (e) => {
