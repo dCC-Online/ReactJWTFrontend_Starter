@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
   const registerUser = async (registerData) => {
     try {
       let finalData = {
-        username: registerData.username,
+        userName: registerData.username,
         password: registerData.password,
         email: registerData.email,
         firstName: registerData.firstName,
